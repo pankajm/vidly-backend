@@ -1,0 +1,6 @@
+{
+  "name":"my default app",
+  "server":{
+    "host":"www.default.com"
+  }
+}

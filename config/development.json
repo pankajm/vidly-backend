@@ -1,0 +1,6 @@
+{
+  "name":"my development app",
+  "server":{
+    "host":"www.development.com"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name":"my production app",
+  "server":{
+    "host":"www.production.com"
+  }
+}
