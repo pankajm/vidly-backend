@@ -1,25 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const mongoose = require('mongoose');
 const Joi = require('@hapi/joi'); // Input validator
-
-const genresSchema = new mongoose.Schema({
-  type: {
-    type: String, 
-    required: true,
-    minlength: 5,
-    maxlength: 50 
-  }
-})
-
-const Genre = mongoose.model('genre', genresSchema);
-
-function validate(body, schema){             // Validate input using
-  const joiSchema = Joi.object(schema);
-  const result =  joiSchema.validate(body);
-  return result;
-}
-
+const {Genre, validate} = require('../models/genres');
 
 router.get('/', (req, res) => {
   Genre.find()
@@ -27,13 +9,11 @@ router.get('/', (req, res) => {
     .catch((error) => res.send(error.message));
 })
 
-
 router.get('/:id', (req, res) => {
   Genre.findById(req.params.id)
     .then((genre) => res.send(genre))
     .catch((error) => res.send(error.message));
 });
-
 
 router.post('/', (req, res) => {
   const schema = { 
