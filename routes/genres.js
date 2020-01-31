@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Joi = require('@hapi/joi'); // Input validator
 const {Genre, validate} = require('../models/genres');
+const mongoose = require('mongoose');
 
 router.get('/', (req, res) => {
   Genre.find()
@@ -9,11 +10,20 @@ router.get('/', (req, res) => {
     .catch((error) => res.send(error.message));
 })
 
-router.get('/:id', (req, res) => {
-  Genre.findById(req.params.id)
-    .then((genre) => res.send(genre))
-    .catch((error) => res.send(error.message));
-});
+router.get('/:id', [
+  (req, res, next) => {
+    if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
+      return res.status(400).send('Invalid id');
+    }
+    next();
+  },
+  (req, res) => {
+  
+    Genre.findById(req.params.id)
+      .then((genre) => res.send(genre))
+      .catch((error) => res.send(error));
+  }
+]);
 
 router.post('/', (req, res) => {
   const schema = { 
@@ -48,10 +58,17 @@ router.put('/:id', (req, res) => {
 });
 
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', [
+  (req, res, next) => {
+    if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
+      return res.status(400).send('Invalid id');
+    }
+    next();
+  }, 
+  (req, res) => {
   Genre.findByIdAndRemove(req.params.id)
     .then((result) => res.send(result))
     .catch((error) => res.send(error.message));
-});
+}]);
 
 module.exports = router;

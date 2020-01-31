@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Joi = require('@hapi/joi'); 
 const {Customer, validate} = require('../models/customers');
+const mongoose = require('mongoose');
 
 // Post Api 
 router.post('/', (req, res) => {
@@ -38,11 +39,18 @@ router.get('/', (req, res) => {
 
 
 // Get customers by id Api
-router.get('/:id', (req, res) => {
+router.get('/:id', [
+  (req, res, next) => {
+    if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
+      return res.status(400).send('Invalid id');
+    }
+    next();
+  },
+  (req, res) => {
   Customer.findById(req.params.id)
     .then(result =>res.send(result))
     .catch(error => res.send(error));
-})
+}])
 
 // Update customers Api
 router.put('/:id', (req, res) => {
@@ -62,11 +70,18 @@ router.put('/:id', (req, res) => {
 })
 
 // Delete customer Api
-router.delete('/:id', (req, res) => {
+router.delete('/:id', [
+  (req, res, next) => {
+    if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
+      return res.status(400).send('Invalid id');
+    }
+    next();
+  }, 
+  (req, res) => {
   Customer.findByIdAndRemove(req.params.id)
     .then(result => res.send(result))
     .catch(error => res.send(error.message))
-})
+}])
 
 module.exports = router;
 
