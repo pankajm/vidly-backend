@@ -2,6 +2,7 @@ const {validate, Movie} = require('../models/movies');
 const mongoose = require('mongoose');
 const express = require('express');
 const Joi = require('@hapi/joi');
+const {Genre} = require('../models/genres');
 const router = express.Router();
 
 router.get('/', async (req, res) => {
@@ -26,7 +27,7 @@ router.post('/', async (req, res) => {
 
   const schema = {
     title: Joi.string().required(),
-    genre: Joi.object().required(),
+    genreId: Joi.string().length(24).required(),
     numberInStock: Joi.number().required(),
     dailyRentalRate: Joi.number().required()
   }
@@ -35,7 +36,20 @@ router.post('/', async (req, res) => {
   if(validation.error)
     return res.status(400).send(validation.error);
 
-  const movie = new Movie(req.body);
+  const genre = await Genre
+    .findById(req.body.genreId)
+    .select('_id type');
+
+  if(!genre)
+    return res.status(404).send('No Genre found for given id');
+
+  const movie = new Movie({
+    title : req.body.title,
+    genre : genre,
+    numberInStock : req.body.numberInStock,
+    dailyRentalRate : req.body.dailyRentalRate 
+  });
+
   const result = await movie.save();
   return res.send(result);
 })
