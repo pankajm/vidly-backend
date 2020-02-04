@@ -20,3 +20,4 @@ function validate(body, schema){             // Validate input using
 
 exports.validate = validate;
 exports.Genre = Genre;
+exports.genresSchema = genresSchema;
