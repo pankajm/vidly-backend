@@ -24,19 +24,27 @@ router.post('/', async (req, res) => {
     .findById(req.body.customerId)
     .select('name isGold phone');
 
-  const movie = await Movie
-    .findById(req.body.movieId)
-    .select('title dailyRentalRate');
+  let movie = await Movie
+    .findById(req.body.movieId);
+
+  if(!movie.numberInStock)
+    return res.send('Movie not available');
 
   const rental = new Rental({
     customer,
-    movie,
+    movie : {
+      title : movie.title,
+      dailyRentalRate : movie.dailyRentalRate
+    },
     rentalFee : 50,
     dateReturned: null
   })
 
   const result = await rental.save();
+  movie.numberInStock--;
+  movie = await movie.save();
   return res.send(result);
+
 })
 
 router.get('/:id', async (req, res) => {
