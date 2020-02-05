@@ -1,9 +1,13 @@
 const express = require('express');
 const router = express.Router();
 const Joi = require('@hapi/joi');
+const mongoose = require('mongoose');
 const {Rental, validate} = require('../models/rentals');
 const {Customer} = require('../models/customers');
 const {Movie} = require('../models/movies');
+const Fawn = require('fawn');
+
+Fawn.init(mongoose, 'transactions');  // for transactions
 
 router.get('/', async (req, res) => {
   const rentals = await Rental.find();
@@ -40,10 +44,20 @@ router.post('/', async (req, res) => {
     dateReturned: null
   })
 
-  const result = await rental.save();
-  movie.numberInStock--;
-  movie = await movie.save();
-  return res.send(result);
+  try{
+    new Fawn.Task()
+      .save('rentals', rental)
+      .update('movies', {_id: movie._id}, { 
+        $inc: { numberInStock : -1}
+      })
+      .run()
+    
+    return res.send(rental);
+  }
+  catch(error){
+    console.log(error);
+    return res.status(500).send('Something Failed');
+  }
 
 })
 
