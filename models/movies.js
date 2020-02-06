@@ -19,8 +19,7 @@ function validate(body){
     dailyRentalRate: Joi.number().required()
   }            
   const joiSchema = Joi.object(schema);
-  const result =  joiSchema.validate(body);
-  return result;
+  return joiSchema.validate(body);
 }
 
 module.exports.validate = validate;
