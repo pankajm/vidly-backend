@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const Joi = require('@hapi/joi'); // Input validator
 const {Genre, validate} = require('../models/genres');
 const mongoose = require('mongoose');
 
@@ -26,10 +25,8 @@ router.get('/:id', [
 ]);
 
 router.post('/', (req, res) => {
-  const schema = { 
-    type: Joi.string().required()
-  };
-  const result = validate(req.body, schema);
+  
+  const result = validate(req.body);
   if(result.error)
     return res.status(400).send(result.error);
 
@@ -44,10 +41,8 @@ router.post('/', (req, res) => {
 
 
 router.put('/:id', (req, res) => {
-  const schema = { 
-    type: Joi.string().required()
-  };
-  const result = validate(req.body, schema);
+
+  const result = validate(req.body);
   if(result.error)
     return res.status(400).send(result.error);
 

@@ -20,8 +20,13 @@ const customersSchema = new mongoose.Schema({
 
 const Customer = mongoose.model('customer', customersSchema);
 
-function validate(body, schema){             // Validate input using
-  const joiSchema = Joi.object(schema);
+function validate(body, schema){   
+  customerSchema = schema || {
+    isGold: Joi.string().required(),
+    name: Joi.string().required(),
+    phone: Joi.number().required()
+  }
+  const joiSchema = Joi.object(customerSchema);
   const result =  joiSchema.validate(body);
   return result;
 }

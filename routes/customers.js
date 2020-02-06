@@ -6,11 +6,7 @@ const mongoose = require('mongoose');
 
 // Post Api 
 router.post('/', (req, res) => {
-  const joiSchema = {
-    isGold: Joi.string().required(),
-    name: Joi.string().required(),
-    phone: Joi.number().required()
-  }
+  
   const result = validate(req.body, joiSchema);
   if(result.error)
     return res.status(400).send(result.error.message);

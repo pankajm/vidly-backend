@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const Joi = require('@hapi/joi');
 const mongoose = require('mongoose');
 const {Rental, validate} = require('../models/rentals');
 const {Customer} = require('../models/customers');
@@ -15,12 +14,8 @@ router.get('/', async (req, res) => {
 })
 
 router.post('/', async (req, res) => {
-  const rentalsSchema = {
-    movieId : Joi.string().required(),
-    customerId : Joi.string().required()
-  }
 
-  const validation = validate(rentalsSchema, req.body);
+  const validation = validate(req.body);
   if(validation.error)
     return res.status(400).send(validation.error);
 
@@ -31,7 +26,10 @@ router.post('/', async (req, res) => {
   let movie = await Movie
     .findById(req.body.movieId);
 
-  if(!movie.numberInStock)
+  if(!customer)
+    return res.send('No customer found for the given customer id');
+
+  if(!movie || !movie.numberInStock)
     return res.send('Movie not available');
 
   const rental = new Rental({

@@ -12,7 +12,10 @@ const genresSchema = new mongoose.Schema({
 
 const Genre = mongoose.model('genre', genresSchema);
 
-function validate(body, schema){             // Validate input using
+function validate(body){  
+  const schema = { 
+    type: Joi.string().required()
+  };
   const joiSchema = Joi.object(schema);
   const result =  joiSchema.validate(body);
   return result;

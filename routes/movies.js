@@ -1,7 +1,6 @@
 const {validate, Movie} = require('../models/movies');
 const mongoose = require('mongoose');
 const express = require('express');
-const Joi = require('@hapi/joi');
 const {Genre} = require('../models/genres');
 const router = express.Router();
 
@@ -25,14 +24,7 @@ router.get('/:id',
 
 router.post('/', async (req, res) => {
 
-  const schema = {
-    title: Joi.string().required(),
-    genreId: Joi.string().length(24).required(),
-    numberInStock: Joi.number().required(),
-    dailyRentalRate: Joi.number().required()
-  }
-
-  let validation = validate(req.body, schema);
+  let validation = validate(req.body);
   if(validation.error)
     return res.status(400).send(validation.error);
 
