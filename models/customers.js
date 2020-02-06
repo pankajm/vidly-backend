@@ -27,8 +27,7 @@ function validate(body, schema){
     phone: Joi.number().required()
   }
   const joiSchema = Joi.object(customerSchema);
-  const result =  joiSchema.validate(body);
-  return result;
+  return joiSchema.validate(body);
 }
 
 module.exports.Customer = Customer;
