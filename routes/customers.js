@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 // Post Api 
 router.post('/', (req, res) => {
   
-  const result = validate(req.body, joiSchema);
+  const result = validate(req.body);
   if(result.error)
     return res.status(400).send(result.error.message);
 
