@@ -21,7 +21,7 @@ router.post('/', async (req, res) => {
     return res.status(400).send('Wrong username or password');
   
   const token = user.getAuthToken();
-  return res.send(token)
+  return res.header('x-auth-token', token).send('Login Successfull');
 
 })
 
