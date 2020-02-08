@@ -2,6 +2,9 @@ const express = require('express');
 const router = express.Router();
 const {Genre, validate} = require('../models/genres');
 const mongoose = require('mongoose');
+const auth = require('../middleware/auth');
+const admin = require('../middleware/admin');
+
 
 router.get('/', (req, res) => {
   Genre.find()
@@ -24,7 +27,7 @@ router.get('/:id', [
   }
 ]);
 
-router.post('/', (req, res) => {
+router.post('/', auth, (req, res) => {
   
   const result = validate(req.body);
   if(result.error)
@@ -40,7 +43,7 @@ router.post('/', (req, res) => {
 });
 
 
-router.put('/:id', (req, res) => {
+router.put('/:id', auth, (req, res) => {
 
   const result = validate(req.body);
   if(result.error)
@@ -53,7 +56,7 @@ router.put('/:id', (req, res) => {
 });
 
 
-router.delete('/:id', [
+router.delete('/:id', [auth, admin,
   (req, res, next) => {
     if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
       return res.status(400).send('Invalid id');

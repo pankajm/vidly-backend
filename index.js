@@ -1,6 +1,5 @@
 const config = require('config');
 const express = require('express');
-const logger = require('./middleware/logger');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 const Joi = require('@hapi/joi');
@@ -13,13 +12,15 @@ const rentals = require('./routes/rentals');
 const users = require('./routes/users');
 const auth = require('./routes/auth');
 
-
-
 const port = process.env.PORT || 3000;
+
+if(!config.get('jwtPrivateKey')){
+  console.error('FATAL: private key is not defined');
+  process.exit(1);
+}
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
 app.use(express.json());
-app.use(logger);
 
 mongoose.connect('mongodb://localhost/vidly', { useNewUrlParser: true , useUnifiedTopology: true, useCreateIndex: true},
   () => console.log('connected to vidly database...'));

@@ -3,9 +3,10 @@ const router = express.Router();
 const Joi = require('@hapi/joi'); 
 const {Customer, validate} = require('../models/customers');
 const mongoose = require('mongoose');
+const auth = require('../middleware/auth');
 
 // Post Api 
-router.post('/', (req, res) => {
+router.post('/', auth, (req, res) => {
   
   const result = validate(req.body);
   if(result.error)
@@ -49,7 +50,7 @@ router.get('/:id', [
 }])
 
 // Update customers Api
-router.put('/:id', (req, res) => {
+router.put('/:id', auth, (req, res) => {
   const schema = {
     name : Joi.string(),
     isGold: Joi.boolean(),
@@ -66,7 +67,7 @@ router.put('/:id', (req, res) => {
 })
 
 // Delete customer Api
-router.delete('/:id', [
+router.delete('/:id', [auth, 
   (req, res, next) => {
     if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
       return res.status(400).send('Invalid id');

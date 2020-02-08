@@ -5,6 +5,7 @@ const {Rental, validate} = require('../models/rentals');
 const {Customer} = require('../models/customers');
 const {Movie} = require('../models/movies');
 const Fawn = require('fawn');
+const auth = require('../middleware/auth');
 
 Fawn.init(mongoose, 'transactions');  // for transactions
 
@@ -13,7 +14,7 @@ router.get('/', async (req, res) => {
   return res.send(rentals);
 })
 
-router.post('/', async (req, res) => {
+router.post('/', auth, async (req, res) => {
 
   const validation = validate(req.body);
   if(validation.error)
@@ -64,12 +65,12 @@ router.get('/:id', async (req, res) => {
   return res.send(rental);
 })
 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', auth, async (req, res) => {
   const rental = await Rental.findByIdAndRemove(req.params.id);
   return res.send(rental);
 })
 
-router.put('/:id', async (req, res) => {
+router.put('/:id', auth, async (req, res) => {
   const rental = await Rental.findByIdAndUpdate(req.params.id, req.body, {new:true});
   return res.send(rental);
 })

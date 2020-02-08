@@ -4,7 +4,7 @@ const {User} = require('../models/users');
 const bcrypt = require('bcrypt');
 const Joi = require('@hapi/joi');
 
-// Registering the user
+// Log in the user
 
 router.post('/', async (req, res) => {
 
@@ -20,7 +20,8 @@ router.post('/', async (req, res) => {
   if(!isValid)
     return res.status(400).send('Wrong username or password');
   
-  return res.send(true);
+  const token = user.getAuthToken();
+  return res.send(token)
 
 })
 
