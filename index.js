@@ -11,6 +11,10 @@ const movies = require('./routes/movies');
 const rentals = require('./routes/rentals');
 const users = require('./routes/users');
 const login = require('./routes/login');
+const logout = require('./routes/logout');
+const redis = require('redis');
+const client = redis.createClient();
+
 
 const port = process.env.PORT || 3000;
 
@@ -36,6 +40,8 @@ app.use('/api/movies', movies);
 app.use('/api/rentals', rentals);
 app.use('/api/users', users);
 app.use('/api/login', login);
+app.use('/api/logout', logout);
+
 
 
 

@@ -4,6 +4,8 @@ const {User, validate} = require('../models/users');
 const _ = require('lodash');
 const bcrypt = require('bcrypt');
 const auth = require('../middleware/auth');
+const redis = require('redis');
+const client = redis.createClient();
 
 // Registering the user
 
@@ -30,14 +32,20 @@ router.post('/', async (req, res) => {
   user.password = await bcrypt.hash(user.password, salt);
 
   const token = user.getAuthToken();
+  
+  client.sadd('x-auth-tokens', token, function(error, response){
+    if(error)
+      return res.status(500).send(error);
+      
+    try{
+      await user.save();
+      return res.header('x-auth-token', token).send(_.pick(user, ['_id', 'name', 'email']));
+    }
+    catch(ex){
+      return res.status(500).send(ex);
+    }
+  });
 
-  try{
-    await user.save();
-    return res.header('x-auth-token', token).send(_.pick(user, ['_id', 'name', 'email']));
-  }
-  catch(ex){
-    return res.status(500).send(ex);
-  }
 })
 
 module.exports = router;

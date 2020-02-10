@@ -3,6 +3,8 @@ const router = express.Router();
 const {User} = require('../models/users');
 const bcrypt = require('bcrypt');
 const Joi = require('@hapi/joi');
+const redis = require('redis');
+const client = redis.createClient();
 
 // Log in the user
 
@@ -21,7 +23,11 @@ router.post('/', async (req, res) => {
     return res.status(400).send('Wrong username or password');
   
   const token = user.getAuthToken();
-  return res.header('x-auth-token', token).send(`Welcome ${user.name}`);
+  client.sadd('x-auth-tokens', token, function(error, response){
+    if(error)
+      return res.status(500).send(error);
+    return res.header('x-auth-token', token).send(`Welcome ${user.name}`);
+  });
 
 })
 
