@@ -12,7 +12,6 @@ const rentals = require('./routes/rentals');
 const users = require('./routes/users');
 const login = require('./routes/login');
 const logout = require('./routes/logout');
-const redis = require('redis');
 
 const port = process.env.PORT || 3000;
 
