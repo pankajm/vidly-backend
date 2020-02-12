@@ -33,7 +33,7 @@ router.post('/', async (req, res) => {
 
   const token = user.getAuthToken();
   
-  client.sadd('x-auth-tokens', token, function(error, response){
+  client.sadd('x-auth-tokens', token, async function(error, response){
     if(error)
       return res.status(500).send(error);
       
