@@ -1,2 +1,6 @@
-module.exports = (err, req, res, next) =>
-   res.status(500).send(err);
+const logger = require('../models/winston');
+
+module.exports = (err, req, res, next) => {
+  logger.error(err);
+  res.status(500).send(err);
+}
