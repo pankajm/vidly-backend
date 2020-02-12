@@ -12,6 +12,7 @@ const rentals = require('./routes/rentals');
 const users = require('./routes/users');
 const login = require('./routes/login');
 const logout = require('./routes/logout');
+const error = require('./middleware/error');
 
 const port = process.env.PORT || 3000;
 
@@ -24,7 +25,12 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 app.use(express.json());
 
 mongoose.connect('mongodb://localhost/vidly', { useNewUrlParser: true , useUnifiedTopology: true, useCreateIndex: true},
-  () => console.log('connected to vidly database...'));
+  (err) => {
+    if(err)
+      console.log(err);
+    else
+      console.log('connected to vidly database...')
+  });
 
 if(app.get('env') === 'development'){
   app.use(morgan('tiny'));
@@ -38,6 +44,7 @@ app.use('/api/rentals', rentals);
 app.use('/api/users', users);
 app.use('/api/login', login);
 app.use('/api/logout', logout);
+app.use(error);
 
 
 

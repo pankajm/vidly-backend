@@ -6,10 +6,10 @@ const auth = require('../middleware/auth');
 const admin = require('../middleware/admin');
 
 
-router.get('/', (req, res) => {
+router.get('/', (req, res, next) => {
   Genre.find()
     .then((result) => res.send(result))
-    .catch((error) => res.send(error.message));
+    .catch((error) => next(error));
 })
 
 router.get('/:id', [
