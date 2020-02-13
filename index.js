@@ -13,6 +13,7 @@ const users = require('./routes/users');
 const login = require('./routes/login');
 const logout = require('./routes/logout');
 const error = require('./middleware/error');
+const logger = require('./models/winston');
 
 const port = process.env.PORT || 3000;
 
@@ -36,6 +37,20 @@ if(app.get('env') === 'development'){
   app.use(morgan('tiny'));
   console.log('morgan enabled...');
 }
+
+process.on('uncaughtException', function(ex){
+  logger.error({
+    level: 'error',
+    message : ex.message
+  });
+})
+
+process.on('unhandledRejection', function(ex){
+  logger.error({
+    level : 'error' ,
+    message : ex.message
+  })
+})
 
 app.use('/api/genres', genres);
 app.use('/api/customers', customers);
