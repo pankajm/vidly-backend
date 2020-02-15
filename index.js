@@ -1,19 +1,12 @@
 const config = require('config');
 const express = require('express');
 const morgan = require('morgan');
-const mongoose = require('mongoose');
 const Joi = require('@hapi/joi');
 Joi.objectId = require('joi-objectid')(Joi);
 const app = express();
-const genres = require('./routes/genres');
-const customers = require('./routes/customers');
-const movies = require('./routes/movies');
-const rentals = require('./routes/rentals');
-const users = require('./routes/users');
-const login = require('./routes/login');
-const logout = require('./routes/logout');
-const error = require('./middleware/error');
 const logger = require('./models/winston');
+require('./startup/routes')(app);
+require('./startup/database')();
 
 const port = process.env.PORT || 3000;
 
@@ -23,15 +16,6 @@ if(!config.get('jwtPrivateKey')){
 }
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
-app.use(express.json());
-
-mongoose.connect('mongodb://localhost/vidly', { useNewUrlParser: true , useUnifiedTopology: true, useCreateIndex: true},
-  (err) => {
-    if(err)
-      console.log(err);
-    else
-      console.log('connected to vidly database...')
-  });
 
 if(app.get('env') === 'development'){
   app.use(morgan('tiny'));
@@ -39,32 +23,10 @@ if(app.get('env') === 'development'){
 }
 
 process.on('uncaughtException', function(ex){
-  logger.error({
-    level: 'error',
-    message : ex.message
-  });
+  logger.error(ex);
 })
 
 process.on('unhandledRejection', function(ex){
-  logger.error({
-    level : 'error' ,
-    message : ex.message
-  })
+  logger.error(ex);
+  process.exit(1);
 })
-
-app.use('/api/genres', genres);
-app.use('/api/customers', customers);
-app.use('/api/movies', movies);
-app.use('/api/rentals', rentals);
-app.use('/api/users', users);
-app.use('/api/login', login);
-app.use('/api/logout', logout);
-app.use(error);
-
-
-
-
-
-// console.log(`Details - 1. ${config.get('name')} 
-//           2. ${config.get('server.host')}
-//           3. ${config.get('server.password')}`);
