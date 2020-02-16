@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const logger = require('../models/winston');
+const logger = require('./logging').logger;
 
 module.exports = function(){
   mongoose.connect('mongodb://localhost/vidly', { useNewUrlParser: true , useUnifiedTopology: true, useCreateIndex: true})

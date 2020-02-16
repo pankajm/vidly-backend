@@ -4,9 +4,9 @@ const morgan = require('morgan');
 const Joi = require('@hapi/joi');
 Joi.objectId = require('joi-objectid')(Joi);
 const app = express();
+require('./startup/logging').registerGlobalLogging();
 require('./startup/routes')(app);
 require('./startup/database')();
-require('./startup/logging')();
 
 const port = process.env.PORT || 3000;
 
