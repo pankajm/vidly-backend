@@ -4,9 +4,9 @@ const morgan = require('morgan');
 const Joi = require('@hapi/joi');
 Joi.objectId = require('joi-objectid')(Joi);
 const app = express();
-const logger = require('./models/winston');
 require('./startup/routes')(app);
 require('./startup/database')();
+require('./startup/logging')();
 
 const port = process.env.PORT || 3000;
 
@@ -21,12 +21,3 @@ if(app.get('env') === 'development'){
   app.use(morgan('tiny'));
   console.log('morgan enabled...');
 }
-
-process.on('uncaughtException', function(ex){
-  logger.error(ex);
-})
-
-process.on('unhandledRejection', function(ex){
-  logger.error(ex);
-  process.exit(1);
-})
