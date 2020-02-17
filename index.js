@@ -1,4 +1,3 @@
-const config = require('config');
 const express = require('express');
 const morgan = require('morgan');
 const Joi = require('@hapi/joi');
@@ -7,13 +6,9 @@ const app = express();
 require('./startup/logging').registerGlobalLogging();
 require('./startup/routes')(app);
 require('./startup/database')();
+require('./startup/config')();
 
 const port = process.env.PORT || 3000;
-
-if(!config.get('jwtPrivateKey')){
-  console.error('FATAL: private key is not defined');
-  process.exit(1);
-}
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
 

@@ -6,12 +6,11 @@ require('winston-mongodb');
 function registerGlobalLogging () {
   
   process.on('uncaughtException', function(ex){
-    logger.error(ex);
+    logger.error(ex.message, ex);
   })
 
   process.on('unhandledRejection', async function(ex){
-    console.log('this comes here');
-    logger.error(ex);  
+    logger.error(ex.message, ex);  
   })
 }
 
