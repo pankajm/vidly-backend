@@ -15,26 +15,32 @@ function registerGlobalLogging () {
 }
 
 const logger = createLogger ({
-  format: combine(
-    timestamp(),
-    prettyPrint(),
-    format.colorize()
-  ),
 
   transports: [
     
     new transports.File({ 
-      level: 'info',
-      filename: 'logfile.log'
+      level: 'error',
+      filename: 'logfile.log',
+      format : combine(
+        format.colorize(),
+        timestamp(),
+        prettyPrint()
+      )
     }),
+
     new transports.Console({
-      level:'error'
+      level:'info',
+      format : combine(
+        format.colorize(),
+        format.simple()
+      )
     }),
+
     new transports.MongoDB({
+      level : 'error',
       db:'mongodb://localhost/vidly'
     })
-  ],
-  exitOnError : true
+  ]
 })
 
 
