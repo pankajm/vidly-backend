@@ -1,5 +1,4 @@
 const config = require('config');
-const logger = require('./logging').logger;
 
 module.exports = function () {
   if(!config.get('jwtPrivateKey')){
