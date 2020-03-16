@@ -17,6 +17,7 @@ module.exports = function(app){
     app.use(morgan('tiny'));
     logger.info('morgan enabled');
   }
+  app.use(express.json());
   app.use('/api/genres', genres);
   app.use('/api/customers', customers);
   app.use('/api/movies', movies);
@@ -24,7 +25,6 @@ module.exports = function(app){
   app.use('/api/users', users);
   app.use('/api/login', login);
   app.use('/api/logout', logout);
-  app.use(express.json());
   app.use(error);
   
 }
