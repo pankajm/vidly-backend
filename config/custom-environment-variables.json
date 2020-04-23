@@ -2,6 +2,5 @@
   "server":{
     "host":"app_host",
     "password":"app_password"
-  },
-  "jwtPrivateKey":"vidly_jwtPrivateKey"
+  }
 }

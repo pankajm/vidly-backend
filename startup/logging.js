@@ -1,7 +1,7 @@
 // const logger = require('../models/logger');
 const { createLogger, format, transports } = require('winston');
 const { combine, timestamp, label, prettyPrint } = format;
-require('winston-mongodb');
+// require('winston-mongodb');
 
 function registerGlobalLogging () {
   
@@ -34,12 +34,12 @@ const logger = createLogger ({
         format.colorize(),
         format.simple()
       )
-    }),
-
-    new transports.MongoDB({
-      level : 'error',
-      db:'mongodb://localhost/vidly'
     })
+
+    // new transports.MongoDB({
+    //   level : 'error',
+    //   db:'mongodb://localhost/vidly'
+    // })
   ]
 })
 
