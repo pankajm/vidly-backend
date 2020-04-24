@@ -2,7 +2,5 @@
   "name":"my default app",
   "server":{
     "host":"www.default.com"
-  },
-  "jwtPrivateKey":"mysecurekey",
-  "db": "mongodb://localhost/vidly"
+  }
 }
