@@ -708,3 +708,309 @@
     '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1129:14)',
   timestamp: '2020-04-23T13:07:06.046Z'
 }
+{
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Configuration property "db" is not definedConfiguration property "db" is not defined',
+  stack: 'Error: Configuration property "db" is not defined\n' +
+    '    at Config.get (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/config/lib/config.js:182:11)\n' +
+    '    at module.exports (/Users/pankaj/programming/Mosh/Node/exercises/vidly/startup/database.js:6:21)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/index.js:6:30)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)\n' +
+    '    at internal/main/run_main_module.js:17:11',
+  timestamp: '2020-04-24T09:31:27.134Z'
+}
+{
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 6379,
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379',
+  stack: 'Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379\n' +
+    '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1129:14)',
+  timestamp: '2020-04-24T09:31:27.146Z'
+}
+{
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 6379,
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379',
+  stack: 'Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379\n' +
+    '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1129:14)',
+  timestamp: '2020-04-24T09:31:27.146Z'
+}
+{
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 6379,
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379',
+  stack: 'Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379\n' +
+    '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1129:14)',
+  timestamp: '2020-04-24T09:31:27.147Z'
+}
+{
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 6379,
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379',
+  stack: 'Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379\n' +
+    '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1129:14)',
+  timestamp: '2020-04-24T09:31:27.148Z'
+}
+{
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 6379,
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379',
+  stack: 'Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379\n' +
+    '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1129:14)',
+  timestamp: '2020-04-24T09:31:27.358Z'
+}
+{
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 6379,
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379',
+  stack: 'Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379\n' +
+    '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1129:14)',
+  timestamp: '2020-04-24T09:31:27.359Z'
+}
+{
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 6379,
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379',
+  stack: 'Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379\n' +
+    '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1129:14)',
+  timestamp: '2020-04-24T09:31:27.360Z'
+}
+{
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 6379,
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379',
+  stack: 'Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379\n' +
+    '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1129:14)',
+  timestamp: '2020-04-24T09:31:27.361Z'
+}
+{
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 6379,
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379',
+  stack: 'Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379\n' +
+    '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1129:14)',
+  timestamp: '2020-04-24T09:31:27.708Z'
+}
+{
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 6379,
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379',
+  stack: 'Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379\n' +
+    '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1129:14)',
+  timestamp: '2020-04-24T09:31:27.709Z'
+}
+{
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 6379,
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379',
+  stack: 'Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379\n' +
+    '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1129:14)',
+  timestamp: '2020-04-24T09:31:27.710Z'
+}
+{
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 6379,
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379',
+  stack: 'Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379\n' +
+    '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1129:14)',
+  timestamp: '2020-04-24T09:31:27.711Z'
+}
+{
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 6379,
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379',
+  stack: 'Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379\n' +
+    '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1129:14)',
+  timestamp: '2020-04-24T09:31:28.293Z'
+}
+{
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 6379,
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379',
+  stack: 'Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379\n' +
+    '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1129:14)',
+  timestamp: '2020-04-24T09:31:28.294Z'
+}
+{
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 6379,
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379',
+  stack: 'Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379\n' +
+    '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1129:14)',
+  timestamp: '2020-04-24T09:31:28.295Z'
+}
+{
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 6379,
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379',
+  stack: 'Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379\n' +
+    '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1129:14)',
+  timestamp: '2020-04-24T09:31:28.296Z'
+}
+{
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Configuration property "db" is not definedConfiguration property "db" is not defined',
+  stack: 'Error: Configuration property "db" is not defined\n' +
+    '    at Config.get (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/config/lib/config.js:182:11)\n' +
+    '    at module.exports (/Users/pankaj/programming/Mosh/Node/exercises/vidly/startup/database.js:6:21)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/index.js:6:30)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)\n' +
+    '    at internal/main/run_main_module.js:17:11',
+  timestamp: '2020-04-24T09:31:39.751Z'
+}
+{
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Configuration property "db" is not definedConfiguration property "db" is not defined',
+  stack: 'Error: Configuration property "db" is not defined\n' +
+    '    at Config.get (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/config/lib/config.js:182:11)\n' +
+    '    at module.exports (/Users/pankaj/programming/Mosh/Node/exercises/vidly/startup/database.js:6:21)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/index.js:6:30)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)\n' +
+    '    at internal/main/run_main_module.js:17:11',
+  timestamp: '2020-04-24T09:33:52.552Z'
+}
+{
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Configuration property "vidly_jwtPrivateKey" is not definedConfiguration property "vidly_jwtPrivateKey" is not defined',
+  stack: 'Error: Configuration property "vidly_jwtPrivateKey" is not defined\n' +
+    '    at Config.get (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/config/lib/config.js:182:11)\n' +
+    '    at module.exports (/Users/pankaj/programming/Mosh/Node/exercises/vidly/startup/config.js:4:14)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/index.js:7:28)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)\n' +
+    '    at internal/main/run_main_module.js:17:11',
+  timestamp: '2020-04-24T09:35:52.151Z'
+}
+{
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Configuration property "vidly_jwtPrivateKey" is not definedConfiguration property "vidly_jwtPrivateKey" is not defined',
+  stack: 'Error: Configuration property "vidly_jwtPrivateKey" is not defined\n' +
+    '    at Config.get (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/config/lib/config.js:182:11)\n' +
+    '    at module.exports (/Users/pankaj/programming/Mosh/Node/exercises/vidly/startup/config.js:4:14)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/index.js:7:28)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)\n' +
+    '    at internal/main/run_main_module.js:17:11',
+  timestamp: '2020-04-24T09:36:12.438Z'
+}
+{
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Configuration property "vidly_jwtPrivateKey" is not definedConfiguration property "vidly_jwtPrivateKey" is not defined',
+  stack: 'Error: Configuration property "vidly_jwtPrivateKey" is not defined\n' +
+    '    at Config.get (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/config/lib/config.js:182:11)\n' +
+    '    at module.exports (/Users/pankaj/programming/Mosh/Node/exercises/vidly/startup/config.js:4:14)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/index.js:7:28)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)\n' +
+    '    at internal/main/run_main_module.js:17:11',
+  timestamp: '2020-04-24T09:36:22.202Z'
+}
+{
+  message: 'Server selection timed out after 30000 msServer selection timed out after 30000 ms',
+  name: 'MongooseTimeoutError',
+  reason: Error: connect ECONNREFUSED 127.0.0.1:27017
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1129:14) {
+    name: 'MongoNetworkError',
+    [Symbol(mongoErrorContextSymbol)]: {}
+  },
+  level: '\u001b[31merror\u001b[39m',
+  stack: 'MongooseTimeoutError: Server selection timed out after 30000 ms\n' +
+    '    at new MongooseTimeoutError (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/error/timeout.js:22:11)\n' +
+    '    at NativeConnection.Connection.openUri (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/connection.js:763:19)\n' +
+    '    at Mongoose.connect (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/index.js:332:15)\n' +
+    '    at module.exports (/Users/pankaj/programming/Mosh/Node/exercises/vidly/startup/database.js:7:12)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/index.js:6:30)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)\n' +
+    '    at internal/main/run_main_module.js:17:11',
+  timestamp: '2020-04-24T09:38:49.016Z',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}
