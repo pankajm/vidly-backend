@@ -4,8 +4,7 @@ const {User, validate} = require('../models/users');
 const _ = require('lodash');
 const bcrypt = require('bcrypt');
 const auth = require('../middleware/auth');
-const redis = require('redis');
-const client = redis.createClient();
+const client = require('../startup/database').redisClient;
 
 // Registering the user
 

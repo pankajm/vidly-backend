@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const redis = require('redis');
-const client = redis.createClient();
+const client = require('../startup/database').redisClient;
 
 router.post('/', (req, res) => {
     client.srem('x-auth-tokens', req.header('x-auth-token'), function(error, reply){

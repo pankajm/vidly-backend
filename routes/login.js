@@ -3,8 +3,8 @@ const router = express.Router();
 const {User} = require('../models/users');
 const bcrypt = require('bcrypt');
 const Joi = require('@hapi/joi');
-const redis = require('redis');
-const client = redis.createClient();
+const client = require('../startup/database').redisClient;
+
 
 // Log in the user
 

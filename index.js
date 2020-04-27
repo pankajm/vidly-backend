@@ -3,7 +3,7 @@ const app = express();
 const logger = require('./startup/logging').logger;
 require('./startup/logging').registerGlobalLogging();
 require('./startup/routes')(app);
-require('./startup/database')();
+require('./startup/database').connectDB();
 require('./startup/config')();
 require('./startup/validation')();
 require('./startup/prod')(app);

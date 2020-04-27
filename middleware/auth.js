@@ -1,7 +1,6 @@
 const jwt = require('jsonwebtoken');
 const config = require('config');
-const redis = require('redis');
-const client = redis.createClient();
+const client = require('../startup/database').redisClient;
 
 function auth(req, res, next){
 
