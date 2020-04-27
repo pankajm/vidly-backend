@@ -1159,3 +1159,69 @@
     '    at internal/main/run_main_module.js:17:11',
   timestamp: '2020-04-27T15:29:49.947Z'
 }
+{
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Configuration property "redisport" is not definedConfiguration property "redisport" is not defined',
+  stack: 'Error: Configuration property "redisport" is not defined\n' +
+    '    at Config.get (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/config/lib/config.js:182:11)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/startup/database.js:7:42)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:852:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:74:18)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/middleware/auth.js:3:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:852:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:74:18)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/routes/genres.js:5:14)',
+  timestamp: '2020-04-27T17:48:11.346Z'
+}
+{
+  level: '\u001b[31merror\u001b[39m',
+  message: "Cannot create property 'path' on string 'redis://redistogo:9a184179ff0bb118fcb34907cf98a850@pike.redistogo.com'Cannot create property 'path' on string 'redis://redistogo:9a184179ff0bb118fcb34907cf98a850@pike.redistogo.com'",
+  stack: "TypeError: Cannot create property 'path' on string 'redis://redistogo:9a184179ff0bb118fcb34907cf98a850@pike.redistogo.com'\n" +
+    '    at createClient (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/redis/lib/createClient.js:67:26)\n' +
+    '    at Object.exports.createClient (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/redis/index.js:1022:41)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/startup/database.js:7:22)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:852:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:74:18)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/middleware/auth.js:3:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:852:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:74:18)',
+  timestamp: '2020-04-27T17:49:27.346Z'
+}
+{
+  level: '\u001b[31merror\u001b[39m',
+  message: "Cannot create property 'path' on string 'redis://redistogo:9a184179ff0bb118fcb34907cf98a850@pike.redistogo.com'Cannot create property 'path' on string 'redis://redistogo:9a184179ff0bb118fcb34907cf98a850@pike.redistogo.com'",
+  stack: "TypeError: Cannot create property 'path' on string 'redis://redistogo:9a184179ff0bb118fcb34907cf98a850@pike.redistogo.com'\n" +
+    '    at createClient (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/redis/lib/createClient.js:67:26)\n' +
+    '    at Object.exports.createClient (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/redis/index.js:1022:41)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/startup/database.js:7:22)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:852:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:74:18)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/middleware/auth.js:3:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:852:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:74:18)',
+  timestamp: '2020-04-27T17:49:30.830Z'
+}

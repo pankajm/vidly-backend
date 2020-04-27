@@ -4,7 +4,7 @@ const config = require('config');
 const redis = require('redis');
 
 
-const client = redis.createClient(config.get('redisport'), config.get('redisserver'));
+const client = redis.createClient(config.get('redisserver'));
           
 client.on('connect', function() {
     console.log('Redis client connected');

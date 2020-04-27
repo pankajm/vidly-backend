@@ -5,6 +5,5 @@
   },
   "jwtPrivateKey":"vidly_jwtPrivateKey",
   "db": "vidly_db",
-  "redisport":"vidly_redis_port",
   "redisserver":"vidly_redis_server"
 }
