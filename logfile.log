@@ -1225,3 +1225,351 @@
     '    at require (internal/modules/cjs/helpers.js:74:18)',
   timestamp: '2020-04-27T17:49:30.830Z'
 }
+{
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Configuration property "db" is not definedConfiguration property "db" is not defined',
+  stack: 'Error: Configuration property "db" is not defined\n' +
+    '    at Config.get (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/config/lib/config.js:182:11)\n' +
+    '    at Object.module.exports.connectDB (/Users/pankaj/programming/Mosh/Node/exercises/vidly/startup/database.js:18:21)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/index.js:6:31)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)\n' +
+    '    at internal/main/run_main_module.js:17:11',
+  timestamp: '2020-04-27T18:11:49.863Z'
+}
+{
+  name: 'MongoParseError',
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Invalid connection stringInvalid connection string',
+  stack: 'MongoParseError: Invalid connection string\n' +
+    '    at parseConnectionString (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/core/uri_parser.js:544:21)\n' +
+    '    at connect (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/operations/connect.js:291:3)\n' +
+    '    at ConnectOperation.execute (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/operations/connect.js:202:5)\n' +
+    '    at executeOperation (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/operations/execute_operation.js:83:26)\n' +
+    '    at MongoClient.connect (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/mongo_client.js:219:10)\n' +
+    '    at /Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/connection.js:667:12\n' +
+    '    at Promise._execute (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/fawn/node_modules/bluebird/js/release/debuggability.js:300:9)\n' +
+    '    at Promise._resolveFromExecutor (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/fawn/node_modules/bluebird/js/release/promise.js:483:18)\n' +
+    '    at new Promise (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/fawn/node_modules/bluebird/js/release/promise.js:79:10)\n' +
+    '    at NativeConnection.Connection.openUri (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/connection.js:664:19)\n' +
+    '    at Mongoose.connect (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/index.js:332:15)\n' +
+    '    at Object.module.exports.connectDB (/Users/pankaj/programming/Mosh/Node/exercises/vidly/startup/database.js:19:12)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/index.js:6:31)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)\n' +
+    '    at internal/main/run_main_module.js:17:11',
+  timestamp: '2020-04-27T18:12:47.511Z',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}
+{
+  name: 'MongoParseError',
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Invalid connection stringInvalid connection string',
+  stack: 'MongoParseError: Invalid connection string\n' +
+    '    at parseConnectionString (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/core/uri_parser.js:544:21)\n' +
+    '    at connect (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/operations/connect.js:291:3)\n' +
+    '    at ConnectOperation.execute (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/operations/connect.js:202:5)\n' +
+    '    at executeOperation (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/operations/execute_operation.js:83:26)\n' +
+    '    at MongoClient.connect (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/mongo_client.js:219:10)\n' +
+    '    at /Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/connection.js:667:12\n' +
+    '    at Promise._execute (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/fawn/node_modules/bluebird/js/release/debuggability.js:300:9)\n' +
+    '    at Promise._resolveFromExecutor (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/fawn/node_modules/bluebird/js/release/promise.js:483:18)\n' +
+    '    at new Promise (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/fawn/node_modules/bluebird/js/release/promise.js:79:10)\n' +
+    '    at NativeConnection.Connection.openUri (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/connection.js:664:19)\n' +
+    '    at Mongoose.connect (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/index.js:332:15)\n' +
+    '    at Object.module.exports.connectDB (/Users/pankaj/programming/Mosh/Node/exercises/vidly/startup/database.js:19:12)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/index.js:6:31)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)\n' +
+    '    at internal/main/run_main_module.js:17:11',
+  timestamp: '2020-04-27T18:13:01.593Z',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}
+{
+  name: 'MongoParseError',
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Invalid connection stringInvalid connection string',
+  stack: 'MongoParseError: Invalid connection string\n' +
+    '    at parseConnectionString (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/core/uri_parser.js:544:21)\n' +
+    '    at connect (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/operations/connect.js:291:3)\n' +
+    '    at ConnectOperation.execute (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/operations/connect.js:202:5)\n' +
+    '    at executeOperation (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/operations/execute_operation.js:83:26)\n' +
+    '    at MongoClient.connect (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/mongo_client.js:219:10)\n' +
+    '    at /Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/connection.js:667:12\n' +
+    '    at Promise._execute (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/fawn/node_modules/bluebird/js/release/debuggability.js:300:9)\n' +
+    '    at Promise._resolveFromExecutor (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/fawn/node_modules/bluebird/js/release/promise.js:483:18)\n' +
+    '    at new Promise (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/fawn/node_modules/bluebird/js/release/promise.js:79:10)\n' +
+    '    at NativeConnection.Connection.openUri (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/connection.js:664:19)\n' +
+    '    at Mongoose.connect (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/index.js:332:15)\n' +
+    '    at Object.module.exports.connectDB (/Users/pankaj/programming/Mosh/Node/exercises/vidly/startup/database.js:19:12)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/index.js:6:31)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)\n' +
+    '    at internal/main/run_main_module.js:17:11',
+  timestamp: '2020-04-27T18:13:32.532Z',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}
+{
+  name: 'MongoParseError',
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Invalid connection stringInvalid connection string',
+  stack: 'MongoParseError: Invalid connection string\n' +
+    '    at parseConnectionString (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/core/uri_parser.js:544:21)\n' +
+    '    at connect (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/operations/connect.js:291:3)\n' +
+    '    at ConnectOperation.execute (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/operations/connect.js:202:5)\n' +
+    '    at executeOperation (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/operations/execute_operation.js:83:26)\n' +
+    '    at MongoClient.connect (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/mongo_client.js:219:10)\n' +
+    '    at /Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/connection.js:667:12\n' +
+    '    at Promise._execute (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/fawn/node_modules/bluebird/js/release/debuggability.js:300:9)\n' +
+    '    at Promise._resolveFromExecutor (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/fawn/node_modules/bluebird/js/release/promise.js:483:18)\n' +
+    '    at new Promise (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/fawn/node_modules/bluebird/js/release/promise.js:79:10)\n' +
+    '    at NativeConnection.Connection.openUri (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/connection.js:664:19)\n' +
+    '    at Mongoose.connect (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/index.js:332:15)\n' +
+    '    at Object.module.exports.connectDB (/Users/pankaj/programming/Mosh/Node/exercises/vidly/startup/database.js:19:12)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/index.js:6:31)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)\n' +
+    '    at internal/main/run_main_module.js:17:11',
+  timestamp: '2020-04-27T18:14:04.406Z',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}
+{
+  name: 'MongoParseError',
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Invalid connection stringInvalid connection string',
+  stack: 'MongoParseError: Invalid connection string\n' +
+    '    at parseConnectionString (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/core/uri_parser.js:544:21)\n' +
+    '    at connect (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/operations/connect.js:291:3)\n' +
+    '    at ConnectOperation.execute (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/operations/connect.js:202:5)\n' +
+    '    at executeOperation (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/operations/execute_operation.js:83:26)\n' +
+    '    at MongoClient.connect (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/mongo_client.js:219:10)\n' +
+    '    at /Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/connection.js:667:12\n' +
+    '    at Promise._execute (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/fawn/node_modules/bluebird/js/release/debuggability.js:300:9)\n' +
+    '    at Promise._resolveFromExecutor (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/fawn/node_modules/bluebird/js/release/promise.js:483:18)\n' +
+    '    at new Promise (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/fawn/node_modules/bluebird/js/release/promise.js:79:10)\n' +
+    '    at NativeConnection.Connection.openUri (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/connection.js:664:19)\n' +
+    '    at Mongoose.connect (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/index.js:332:15)\n' +
+    '    at Object.module.exports.connectDB (/Users/pankaj/programming/Mosh/Node/exercises/vidly/startup/database.js:19:12)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/index.js:6:31)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)\n' +
+    '    at internal/main/run_main_module.js:17:11',
+  timestamp: '2020-04-27T18:16:57.269Z',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}
+{
+  name: 'MongoParseError',
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Invalid connection stringInvalid connection string',
+  stack: 'MongoParseError: Invalid connection string\n' +
+    '    at parseConnectionString (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/core/uri_parser.js:544:21)\n' +
+    '    at connect (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/operations/connect.js:291:3)\n' +
+    '    at ConnectOperation.execute (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/operations/connect.js:202:5)\n' +
+    '    at executeOperation (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/operations/execute_operation.js:83:26)\n' +
+    '    at MongoClient.connect (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/mongo_client.js:219:10)\n' +
+    '    at /Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/connection.js:667:12\n' +
+    '    at Promise._execute (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/fawn/node_modules/bluebird/js/release/debuggability.js:300:9)\n' +
+    '    at Promise._resolveFromExecutor (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/fawn/node_modules/bluebird/js/release/promise.js:483:18)\n' +
+    '    at new Promise (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/fawn/node_modules/bluebird/js/release/promise.js:79:10)\n' +
+    '    at NativeConnection.Connection.openUri (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/connection.js:664:19)\n' +
+    '    at Mongoose.connect (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/index.js:332:15)\n' +
+    '    at Object.module.exports.connectDB (/Users/pankaj/programming/Mosh/Node/exercises/vidly/startup/database.js:19:12)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/index.js:6:31)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)\n' +
+    '    at internal/main/run_main_module.js:17:11',
+  timestamp: '2020-04-27T18:17:57.071Z',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}
+{
+  name: 'MongoParseError',
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Invalid connection stringInvalid connection string',
+  stack: 'MongoParseError: Invalid connection string\n' +
+    '    at parseConnectionString (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/core/uri_parser.js:544:21)\n' +
+    '    at connect (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/operations/connect.js:291:3)\n' +
+    '    at ConnectOperation.execute (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/operations/connect.js:202:5)\n' +
+    '    at executeOperation (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/operations/execute_operation.js:83:26)\n' +
+    '    at MongoClient.connect (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/mongo_client.js:219:10)\n' +
+    '    at /Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/connection.js:667:12\n' +
+    '    at Promise._execute (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/fawn/node_modules/bluebird/js/release/debuggability.js:300:9)\n' +
+    '    at Promise._resolveFromExecutor (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/fawn/node_modules/bluebird/js/release/promise.js:483:18)\n' +
+    '    at new Promise (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/fawn/node_modules/bluebird/js/release/promise.js:79:10)\n' +
+    '    at NativeConnection.Connection.openUri (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/connection.js:664:19)\n' +
+    '    at Mongoose.connect (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/index.js:332:15)\n' +
+    '    at Object.module.exports.connectDB (/Users/pankaj/programming/Mosh/Node/exercises/vidly/startup/database.js:19:12)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/index.js:6:31)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)\n' +
+    '    at internal/main/run_main_module.js:17:11',
+  timestamp: '2020-04-27T18:23:25.312Z',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}
+{
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Configuration property "redisserver" is not definedConfiguration property "redisserver" is not defined',
+  stack: 'Error: Configuration property "redisserver" is not defined\n' +
+    '    at Config.get (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/config/lib/config.js:182:11)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/startup/database.js:7:42)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:852:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:74:18)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/middleware/auth.js:3:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:852:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:74:18)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/routes/genres.js:5:14)',
+  timestamp: '2020-04-27T18:29:09.165Z'
+}
+{
+  message: 'Server selection timed out after 30000 msServer selection timed out after 30000 ms',
+  name: 'MongooseTimeoutError',
+  reason: MongoNetworkError: connection 98 to cluster0-shard-00-01-tnhw9.mongodb.net:27017 closed
+      at TLSSocket.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/core/connection/connection.js:372:9)
+      at Object.onceWrapper (events.js:300:26)
+      at TLSSocket.emit (events.js:210:5)
+      at net.js:659:12
+      at TCP.done (_tls_wrap.js:481:7) {
+    name: 'MongoNetworkError',
+    [Symbol(mongoErrorContextSymbol)]: {}
+  },
+  level: '\u001b[31merror\u001b[39m',
+  stack: 'MongooseTimeoutError: Server selection timed out after 30000 ms\n' +
+    '    at new MongooseTimeoutError (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/error/timeout.js:22:11)\n' +
+    '    at NativeConnection.Connection.openUri (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/connection.js:763:19)\n' +
+    '    at Mongoose.connect (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/index.js:332:15)\n' +
+    '    at Object.module.exports.connectDB (/Users/pankaj/programming/Mosh/Node/exercises/vidly/startup/database.js:19:12)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/index.js:6:31)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)\n' +
+    '    at internal/main/run_main_module.js:17:11',
+  timestamp: '2020-04-27T18:30:33.218Z',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}
+{
+  message: 'Server selection timed out after 30000 msServer selection timed out after 30000 ms',
+  name: 'MongooseTimeoutError',
+  reason: MongoNetworkError: connection 101 to cluster0-shard-00-02-tnhw9.mongodb.net:27017 closed
+      at TLSSocket.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongodb/lib/core/connection/connection.js:372:9)
+      at Object.onceWrapper (events.js:300:26)
+      at TLSSocket.emit (events.js:210:5)
+      at net.js:659:12
+      at TCP.done (_tls_wrap.js:481:7) {
+    name: 'MongoNetworkError',
+    [Symbol(mongoErrorContextSymbol)]: {}
+  },
+  level: '\u001b[31merror\u001b[39m',
+  stack: 'MongooseTimeoutError: Server selection timed out after 30000 ms\n' +
+    '    at new MongooseTimeoutError (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/error/timeout.js:22:11)\n' +
+    '    at NativeConnection.Connection.openUri (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/connection.js:763:19)\n' +
+    '    at Mongoose.connect (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/mongoose/lib/index.js:332:15)\n' +
+    '    at Object.module.exports.connectDB (/Users/pankaj/programming/Mosh/Node/exercises/vidly/startup/database.js:19:12)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/index.js:6:31)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)\n' +
+    '    at internal/main/run_main_module.js:17:11',
+  timestamp: '2020-04-27T18:35:06.155Z',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}
+{
+  level: '\u001b[31merror\u001b[39m',
+  message: 'Configuration property "redisserver" is not definedConfiguration property "redisserver" is not defined',
+  stack: 'Error: Configuration property "redisserver" is not defined\n' +
+    '    at Config.get (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/config/lib/config.js:182:11)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/startup/database.js:7:42)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:852:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:74:18)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/middleware/auth.js:3:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:852:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:74:18)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/routes/genres.js:5:14)',
+  timestamp: '2020-04-28T12:41:27.454Z'
+}
+{
+  level: '\u001b[31merror\u001b[39m',
+  message: 'The redis url must begin with slashes "//" or contain slashes after the redis protocolThe redis url must begin with slashes "//" or contain slashes after the redis protocol',
+  stack: 'RangeError: The redis url must begin with slashes "//" or contain slashes after the redis protocol\n' +
+    '    at createClient (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/redis/lib/createClient.js:65:19)\n' +
+    '    at Object.exports.createClient (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/redis/index.js:1022:41)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/startup/database.js:7:22)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:852:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:74:18)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/middleware/auth.js:3:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:852:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:74:18)',
+  timestamp: '2020-04-28T12:43:32.710Z'
+}
+{
+  level: '\u001b[31merror\u001b[39m',
+  message: "Cannot parse config file: '/Users/pankaj/programming/Mosh/Node/exercises/vidly/config/default.json': SyntaxError: JSON5: invalid end of input at 5:5Cannot parse config file: '/Users/pankaj/programming/Mosh/Node/exercises/vidly/config/default.json': SyntaxError: JSON5: invalid end of input at 5:5",
+  stack: "Error: Cannot parse config file: '/Users/pankaj/programming/Mosh/Node/exercises/vidly/config/default.json': SyntaxError: JSON5: invalid end of input at 5:5\n" +
+    '    at Config.util.parseFile (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/config/lib/config.js:794:11)\n' +
+    '    at /Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/config/lib/config.js:601:26\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Config.util.loadFileConfigs (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/config/lib/config.js:600:16)\n' +
+    '    at new Config (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/config/lib/config.js:116:27)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/node_modules/config/lib/config.js:1441:31)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:852:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:74:18)\n' +
+    '    at Object.<anonymous> (/Users/pankaj/programming/Mosh/Node/exercises/vidly/middleware/auth.js:2:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)',
+  timestamp: '2020-04-28T12:48:25.018Z'
+}

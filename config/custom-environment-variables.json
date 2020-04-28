@@ -1,8 +1,4 @@
 {
-  "server":{
-    "host":"app_host",
-    "password":"app_password"
-  },
   "jwtPrivateKey":"vidly_jwtPrivateKey",
   "db": "vidly_db",
   "redisserver":"vidly_redis_server"

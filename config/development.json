@@ -1,7 +1,5 @@
 {
-  "name":"my development app",
-  "server":{
-    "host":"www.development.com"
-  },
-  "jwtPrivateKey":"mysecurekey"
+  "jwtPrivateKey":"mysecurekey",
+  "db":"mongodb://localhost/vidly",
+  "redisserver":"redis://localhost:6379/"
 }

@@ -1,6 +1,5 @@
 {
   "jwtPrivateKey":"mysecurekey",
   "db": "mongodb://localhost/vidly_tests",
-  "port":"6379",
-  "redisserver":"localhost"
+  "redisserver":"redis://localhost:6379/"
 }

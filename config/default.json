@@ -1,6 +1,5 @@
 {
-  "name":"my default app",
-  "server":{
-    "host":"www.default.com"
-  }
+  "db":"mongodb://localhost/vidly",
+  "redisserver":"redis://localhost:6379/",
+  "jwtPrivateKey":"mysecurekey"
 }
